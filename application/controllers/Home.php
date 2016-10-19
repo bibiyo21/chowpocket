@@ -64,6 +64,7 @@ class Home extends CI_Controller {
 		$error['first_name_error'] = empty($fields['first_name']) || !isset($fields['first_name']) ? true : false;
 		$error['last_name_error'] = empty($fields['last_name']) || !isset($fields['last_name']) ? true : false;
 		$error['email_error'] = ( ! preg_match("/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix", $fields['email'])) ? true : false;
+		$error['email_exist_error'] = $this->user_model->check_email($fields['email']);
 		$error['mobile_error'] = ( ! preg_match("/^(\d[\s-]?)?[\(\[\s-]{0,2}?\d{3}[\)\]\s-]{0,2}?\d{3}[\s-]?\d{4}$/i", $fields['mobile_number'])) ? true : false;
 		$error['address_error'] = empty($fields['address']) || !isset($fields['address']) ? true : false;
 

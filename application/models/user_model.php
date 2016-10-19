@@ -12,4 +12,19 @@ class User_model extends CI_Model
     {
         return $this->db->insert('tbl_users', $data);
     }
+
+    public function check_email($email)
+    {
+        $this->db->from('tbl_users');
+        $this->db->where('email', $email);
+        $query = $this->db->get();
+
+//        print_r($query->result());
+
+        if(count($query->result()) > 0) {
+            return true;
+        }
+
+        return false;
+    }
 }

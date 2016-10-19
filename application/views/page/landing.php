@@ -18,6 +18,7 @@
                     <p class="errors text-danger" id="first_name_error"><span class="glyphicon glyphicon-remove"></span> First Name is required.</p>
                     <p class="errors text-danger" id="last_name_error"><span class="glyphicon glyphicon-remove"></span> Last Name is required.</p>
                     <p class="errors text-danger" id="email_error"><span class="glyphicon glyphicon-remove"></span> Valid Email Address is required.</p>
+                    <p class="errors text-danger" id="email_exist_error"><span class="glyphicon glyphicon-remove"></span> Email address is already registered.</p>
                     <p class="errors text-danger" id="mobile_error"><span class="glyphicon glyphicon-remove"></span> Valid Mobile Number is required.</p>
                     <p class="errors text-danger" id="address_error"><span class="glyphicon glyphicon-remove"></span> Address is required.</p>
                 </div>
@@ -91,6 +92,9 @@
                                     break;
                                 case 'address_error':
                                     $("#address_error").show();
+                                    break;
+                                case 'email_exist_error':
+                                    $("#email_exist_error").show();
                                     break;
                             }
                         }
