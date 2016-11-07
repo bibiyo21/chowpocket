@@ -12,7 +12,10 @@
         Hooray!!!
     </p>
     <p style="Margin-top: 0;color: #565656;font-family: Georgia,serif;font-size: 16px;line-height: 25px;Margin-bottom: 25px">
-        You have successfully subscribe in our page! Expect our delicious updates from us!
+        You have successfully registered in our page! Please click the link below to confirm your subcription.
+    </p>
+    <p style="Margin-top: 0;color: #565656;font-family: Georgia,serif;font-size: 16px;line-height: 25px;Margin-bottom: 25px">
+        <?php echo $url?>
     </p>
 </div>
 </body>

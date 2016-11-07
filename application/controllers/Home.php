@@ -20,6 +20,7 @@ class Home extends CI_Controller {
 		$error_count = 0;
 		$data = $this->input->get(null, true);
 
+
 //		print_r($data);
 		$errors = $this->validate_inputs($data);
 
@@ -30,12 +31,22 @@ class Home extends CI_Controller {
 		}
 
 		if(!$error_count) {
-			$this->send_mail($data);
+            $data['hash'] = md5(uniqid().time());
+//			$this->send_mail($data);
 			$this->user_model->add_user($data);
 		}
 
 		$this->encode_data($errors);
 	}
+
+	public function subscribe()
+    {
+        $hash = $this->input->get('h');
+
+        if($this->user_model->check_user_by_hash($hash)) {
+            $this->user_model->update_user_by_hash(array('status' => 1), $hash);
+        }
+    }
 	
 	protected function send_mail($data)
 	{
@@ -46,6 +57,9 @@ class Home extends CI_Controller {
 			'smtp_timeout' => '4',
 			'mailtype'  => 'html',
 		);
+
+        $data = base_url('home/subscribe?h='.$data['hash']);
+
 		$this->load->library('email', $config);
 		$this->email->set_newline("\r\n");
 

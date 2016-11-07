@@ -27,4 +27,25 @@ class User_model extends CI_Model
 
         return false;
     }
+
+    public function check_user_by_hash($hash)
+    {
+        $this->db->from('tbl_users');
+        $this->db->where('hash', $hash);
+        $query = $this->db->get();
+
+//        print_r($query->result());
+
+        if(count($query->result()) > 0) {
+            return true;
+        }
+
+        return false;
+    }
+
+    public function update_user_by_hash($data, $hash)
+    {
+        $this->db->where('hash', $hash);
+        return $this->db->update('tbl_users', $data);
+    }
 }
