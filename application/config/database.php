@@ -73,12 +73,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $active_group = 'default';
 $query_builder = TRUE;
 
+switch($_SERVER['SERVER_ADDR']) {
+    case '127.0.0.1':
+        $hostname = 'localhost';
+        $username = 'root';
+        $password = '';
+        $database = 'db_chowpocket';
+        break;
+    default:
+        $hostname = 'mysql.chowpocket.com';
+        $username = 'bibiyo';
+        $password = 'p@ssw0rd!';
+        $database = 'db_chowpocket';
+}
+
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'db_chowpocket',
+	'hostname' => $hostname,
+	'username' => $username,
+	'password' => $password,
+	'database' => $database,
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

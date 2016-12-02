@@ -3,60 +3,71 @@
     <div class="container">
 
         <div class="row">
-            <div class="col-lg-8" class="col-md-8" class="col-sm-8" >
-                <div class="intro-message">
-                    <h1 font face="ETNA">CHOWPOCKET</h1>
-                    <h3 class="texta">MEET MANILA'S MOST DELICIOUS APP</h3>
-                    <hr class="intro-divider">
+            <div class="col-lg-8" class="col-md-8" class="col-sm-8" class="col-xs-8">
+                <div class="intro-message pad-center">
+                    <div id="texta" class="texta text-center">Meet CHOWPOCKET</div>
+                    <div class="textb text-center">MANILA'S MOST DELICIOUS APP</div>
+                    <div class="text-left"></div>
+                    <br><br><br><br><br><br><br>
+                    <div class="textc text-center">
+                        <div>Lunch, inspired by local cuisines, from our kitchens <br>
+                            to your office.</div>
 
-                    <div class="textc">
-                        Hand crafted filipino recipes made using only the freshest ingredients
                     </div>
-                    <div class="textc" >
-                        and delivered straight to your door.
+                    <!-- <div class="textc text-center pad-center" >
+                         and delivered straight to your door.
+                    </div>  -->
+                    <br>
+                    <div class="textf text-left">
+                        <h3 class="textd intro-center ">Coming 2017</h3>
                     </div>
-
-                    <div class="textc">
-                        <h3 class="textd">Coming this 2017</h3>
-                    </div>
+                    <!--    <ul class="list-inline intro-social-buttons">
+                           <li>
+                               <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                           </li>
+                           <li>
+                               <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                           </li>
+                           <li>
+                               <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                           </li>
+                       </ul> -->
                 </div>
             </div>
 
-            <div class="col-lg-4" class="col-md-4" class="col-sm-4" >
-                <form class="form-horizontal">
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-
-                    <div class="form-group">
-                        <label>Email address</label>
-                        <input type="email" class="form-control" id="email" placeholder="Email Address">
+            <div class="col-lg-4" class="col-md-4" class="col-sm-4" class="col-xs-4" class="pad-center" >
+                <form class="form-right pad-center">
+                    <br><br><br><br><br><br><br><br>
+                    <div class="form-group1">
+                        <!--    <label ></label> -->
+                        <input type="email" id="email" placeholder="Email Address" size="42" text-color="black">
                         <p class="errors text-danger pull-left" id="email_error"><span class="glyphicon glyphicon-remove"></span> Valid Email Address is required.</p>
                         <p class="errors text-danger pull-left" id="email_exist_error"><span class="glyphicon glyphicon-remove"></span> Email address is already registered.</p>
                     </div>
                     <div class="form-group">
-                        <label>First Name</label>
-                        <input type="text" class="form-control" id="fname" placeholder="First Name">
+                        <!--  <label ></label> -->
+                        <input type="text3" id="fname" placeholder="First Name">
+                        <input type="text" id="lname" placeholder="Last Name">
                         <p class="errors text-danger pull-left" id="first_name_error"><span class="glyphicon glyphicon-remove"></span> First Name is required.</p>
-                    </div>
-                    <div class="form-group">
-                        <label>Last Name</label>
-                        <input type="text" class="form-control" id="lname" placeholder="Last Name">
                         <p class="errors text-danger pull-left" id="last_name_error"><span class="glyphicon glyphicon-remove"></span> Last Name is required.</p>
+
                     </div>
                     <div class="form-group">
-                        <label>Mobile Number</label>
-                        <input type="number" class="form-control" id="mobile" placeholder="Mobile Number">
-                        <p class="errors text-danger pull-left" id="mobile_error"><span class="glyphicon glyphicon-remove"></span> Valid Mobile Number is required.</p>
-                    </div>
-                    <div class="form-group">
-                        <label>Address</label>
-                        <input type="text" class="form-control" id="address" placeholder="Company Name">
+                        <!-- <label ></label> -->
+                        <input type="text1" id="address" placeholder="Office Address" size="42">
                         <p class="errors text-danger pull-left" id="address_error"><span class="glyphicon glyphicon-remove"></span> Address is required.</p>
                     </div>
+                    <div class="form-group">
+                        <!--   <label></label> -->
+                        <input type="text1" id="mobile" placeholder="Mobile Number" size="42" maxlength="11">
+                        <p class="errors text-danger pull-left" id="mobile_error"><span class="glyphicon glyphicon-remove"></span> Valid Mobile Number is required.</p>
+                    </div>
+
+                    <!--  <div class="checkbox">
+                         <label class="check-left"><input type="checkbox" value=""><a href="file:///C:/Users/Roger%20Turbo/Desktop/chowpocket/privacy.html">Copyright Links to this document</a>
+                         </label>
+                     </div> -->
+                    <br>
                     <div class="alert alert-success" role="alert" id="sucess-panel">
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
@@ -64,22 +75,77 @@
                         Hurrah! please check your email for the confirmation of your registration.
                     </div>
                     <div>
-                        <button id="submit" class="btn btn-warning">BE THE FIRST ONE IN</button>
+                        <button id="submit" class="btn btn-warning ">BE THE FIRST ONE IN</button>
                     </div>
                     <br>
                 </form>
+                <br>
+                <div class="pad-center">
+                    <a class="btn btn-social-icon btn-facebook btn-lg btn-soc " href="https://www.facebook.com/Chowpocket">
+                        <span class="fa fa-facebook "></span>
 
-                <a class="btn btn-social-icon btn-facebook btn-md" >
-                    <span class="fa fa-facebook">    </span>
-
-                </a>
-                <a class="btn btn-social-icon btn-twitter btn-md">
-                    <span class="fa fa-twitter"></span>
-                </a>
-                <a class="btn btn-social-icon btn-instagram btn-md">
-                    <span class="fa fa-instagram"></span>
-                </a>
+                    </a>
+                    <a class="btn btn-social-icon btn-twitter btn-lg btn-soc" href="https://www.twitter.com/Chowpocket">
+                        <span class="fa fa-twitter "></span>
+                    </a>
+                    <a class="btn btn-social-icon btn-instagram btn-lg btn-soc" href="https://www.instagram.com/Chowpocket">
+                        <span class="fa fa-instagram "></span>
+                    </a>
+                </div>
             </div>
+
+<!--            <div  class="col-lg-4" class="col-md-4" class="col-sm-4" class="col-xs-4" class="pad-center" >-->
+<!--                <form class="form-horizontal">-->
+<!--                    <br>-->
+<!--                    <br>-->
+<!--                    <br>-->
+<!--                    <br>-->
+<!--                    <br>-->
+<!--                    <br>-->
+<!---->
+<!--                    <div class="form-group">-->
+<!--                        <input type="email" class="form-control" id="email" placeholder="Email Address" size="42">-->
+<!--                        <p class="errors text-danger pull-left" id="email_error"><span class="glyphicon glyphicon-remove"></span> Valid Email Address is required.</p>-->
+<!--                        <p class="errors text-danger pull-left" id="email_exist_error"><span class="glyphicon glyphicon-remove"></span> Email address is already registered.</p>-->
+<!--                    </div>-->
+<!--                    <div class="form-group">-->
+<!--                        <input type="text" class="form-control" id="fname" placeholder="First Name">-->
+<!--                        <input type="text" class="form-control" id="lname" placeholder="Last Name">-->
+<!--                        <p class="errors text-danger pull-left" id="first_name_error"><span class="glyphicon glyphicon-remove"></span> First Name is required.</p>-->
+<!--                        <p class="errors text-danger pull-left" id="last_name_error"><span class="glyphicon glyphicon-remove"></span> Last Name is required.</p>-->
+<!--                    </div>-->
+<!--                    <div class="form-group">-->
+<!--                        <input type="text" class="form-control" id="address" placeholder="Office Address" size="42">-->
+<!--                        <p class="errors text-danger pull-left" id="address_error"><span class="glyphicon glyphicon-remove"></span> Address is required.</p>-->
+<!--                    </div>-->
+<!--                    <div class="form-group">-->
+<!---->
+<!--                        <input type="number" class="form-control" id="mobile" placeholder="Mobile Number" size="42">-->
+<!--                        <p class="errors text-danger pull-left" id="mobile_error"><span class="glyphicon glyphicon-remove"></span> Valid Mobile Number is required.</p>-->
+<!--                    </div>-->
+<!--                    <div class="alert alert-success" role="alert" id="sucess-panel">-->
+<!--                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">-->
+<!--                            <span aria-hidden="true">&times;</span>-->
+<!--                        </button>-->
+<!--                        Hurrah! please check your email for the confirmation of your registration.-->
+<!--                    </div>-->
+<!--                    <div>-->
+<!--                        <button id="submit" class="btn btn-warning">BE THE FIRST ONE IN</button>-->
+<!--                    </div>-->
+<!--                    <br>-->
+<!--                </form>-->
+<!---->
+<!--                <a class="btn btn-social-icon btn-facebook btn-md" >-->
+<!--                    <span class="fa fa-facebook">    </span>-->
+<!---->
+<!--                </a>-->
+<!--                <a class="btn btn-social-icon btn-twitter btn-md">-->
+<!--                    <span class="fa fa-twitter"></span>-->
+<!--                </a>-->
+<!--                <a class="btn btn-social-icon btn-instagram btn-md">-->
+<!--                    <span class="fa fa-instagram"></span>-->
+<!--                </a>-->
+<!--            </div>-->
         </div>
 
     </div>

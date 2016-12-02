@@ -46,6 +46,8 @@ class Home extends CI_Controller {
         if($this->user_model->check_user_by_hash($hash)) {
             $this->user_model->update_user_by_hash(array('status' => 1), $hash);
         }
+
+        redirect('home?subcribe', 'refresh');
     }
 	
 	protected function send_mail($data)
@@ -58,12 +60,12 @@ class Home extends CI_Controller {
 			'mailtype'  => 'html',
 		);
 
-        $data = base_url('home/subscribe?h='.$data['hash']);
+        $data = base_url('index.php/home/subscribe?h='.$data['hash']);
 
 		$this->load->library('email', $config);
 		$this->email->set_newline("\r\n");
 
-		$this->email->from('jahgracilla@gmail.com', 'Jay Albert Arcilla');
+		$this->email->from('admin@chowpocket.com', 'Chowpocket');
 		$this->email->to($data['email']);
 		$this->email->subject('Chowpocket Subscription');
 

@@ -4,6 +4,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+
 body,
 html {
     width: 100%;
@@ -166,5 +167,164 @@ font-family:Montserrat;  color: #ECE5CE;  padding: 10px 0;
 p.copyright {
   color: black;  margin: 10px 0 0;
 }
-.texta{font-face: Delicious ;text-shadow: 1px 1px 1px rgba(0,0,0,0.6); }.textc{   font-family: Volkrn;} .textd{font-family: VOlkrn ; text-shadow: 1px 1px 1px rgba(0,0,0,0.6); }
 
+.texta{margin-top:13px;font-size: 45px;  font-family: 'League Spartan';color:black; }
+
+.textb{  margin-left:20px; font-family: 'League Spartan';
+ font-size: 30px; color:black; font-weight: 900;}
+ /**/
+.textc{background-color: rgba(30, 30, 30, 0.42);margin-left:90px;padding-bottom:10px;padding:1px; font-size: 25px; font-family: 'Raleway'; color:#e1e1e1; font-weight:bold;} 
+.textd{font-size: 24px;  font-family: 'League Spartan'; color:black; } 
+.texte{ font-size: 15px; font-family: 'Raleway'; color:black; font-weight:bold;} 
+.textf{margin-left:90px; font-size:25px; font-family: 'Raleway'; color:black; font-weight:bold;}
+.black-background {background-color:#000000; } 
+.white-background {background-color:white;}
+.float-right
+{
+    float: right;
+}
+.float-left
+{
+    float:left;
+}
+.left{ 
+    left:50px;
+    
+    padding: 10px;
+}
+input[type=text], textarea{
+    color: black;
+    float: right;	
+    width: 55%;
+    padding: 10px 10px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	
+}
+
+input[type=email], textarea{
+    color: black;
+    width: 100%;
+    padding: 10px 10px;
+    margin: 1px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=number], textarea{
+    color:black;
+    width: 100%;
+    padding: 5px 10px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+}
+input[type=text1], textarea{
+    color:black;
+    width: 100%;
+    padding: 10px 10px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=text3], textarea{
+    color: black;
+    float:left;
+    width: 40%;
+    padding: 10px 10px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	
+}
+.btn-warning{
+margin-top:5px;
+color:#fff;
+background-color:#ec971f;
+border-color:#ec971f;
+padding: 24px 90px;
+width: 100%;
+}
+.form-group
+{
+margin-bottom:5px;
+
+}
+.form-group1
+{
+margin-bottom:0px;
+margin-top:5px; 
+}
+.form-right
+{
+ margin-right: 40px;
+
+}
+.form-right1
+{
+margin-right:10px;
+}
+.form-right2
+{
+ margin-right: 0px;
+
+}
+.privacy
+{
+color:black;
+}
+.input[type=checkbox]
+{
+margin:4px 10 0;
+margin-top:1px\9;
+line-height:normal
+}
+.check-left
+{
+margin-right: 15px;
+color: black;
+font-weight: 900;
+font-size: 15px;
+}
+.boxbox
+{
+padding: 30px 30px;
+width: 100%;
+text-align: left3:46 AM 18/11/2016;
+}
+textarea{
+resize: none;
+}
+.btn-agree{
+color:#fff;
+background-color:#ec971f;
+border-color:#ec971f;
+width: 100%;
+}
+.btn-soc
+{
+margin-right: 40px;
+}
+
+.pad-center
+{
+    float: center;
+
+}
+.intro-center  
+{
+    float:none;
+}
